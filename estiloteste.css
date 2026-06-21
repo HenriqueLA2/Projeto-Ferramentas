@@ -1,0 +1,30 @@
+body {
+    background-color: #5859ca;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    font-size: 20px;
+    color: #000c0f;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 318px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px;
+    margin: 0px auto 20px auto;
+}
+
+#ul1 {
+    font-size: 20px;
+    color: #000c0f;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 318px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px;
+    margin: auto;
+    text-align: left;
+}

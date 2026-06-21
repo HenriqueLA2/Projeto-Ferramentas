@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="imagens/Flag_of_Brazil_(1889–1960).svg.png" type="image/x-icon">
+    <title>Verificador de Nacionalidade</title>
+</head>
+<body>
+    <h1>Você é estrangeiro ou brasileiro?</h1>
+    <p id="par1">Qual país você nasceu?</p>
+    <input type="text" name="txtnac" id="txtnac" placeholder="Ex: Brasil">
+    <input type="button" value="Verificar" onclick="pesquisar()">
+    
+    <div id="res" style="margin-top: 20px; font-size: 18px;"></div>
+
+    <script>
+        function pesquisar() {
+            const paisInput = document.getElementById('txtnac').value.trim().toLowerCase();
+            const res = document.getElementById('res');
+
+            res.innerHTML = ''; // limpa resultado anterior
+
+            // Lista de países e bandeiras
+            const bandeiras = {
+                'brasil': '🇧🇷',
+                'portugal': '🇵🇹',
+                'estados unidos': '🇺🇸',
+                'eua': '🇺🇸',
+                'argentina': '🇦🇷',
+                'japão': '🇯🇵',
+                'japao': '🇯🇵',
+                'alemanha': '🇩🇪',
+                'frança': '🇫🇷',
+                'franca': '🇫🇷'
+            };
+
+            if (paisInput === 'brasil') {
+                res.innerHTML = `<p>Você nasceu no Brasil ${bandeiras['brasil']}<br><strong>Você é brasileiro!</strong></p>`;
+            } else {
+                const bandeira = bandeiras[paisInput] || '🌍';
+                res.innerHTML = `<p>Você nasceu em ${paisInput.charAt(0).toUpperCase() + paisInput.slice(1)} ${bandeira}<br><strong>Você é estrangeiro!</strong></p>`;
+            }
+        }
+    </script>
+</body>
+</html>

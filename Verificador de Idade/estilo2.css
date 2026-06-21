@@ -1,0 +1,39 @@
+body {
+    background: #5859ca;
+    font: normal 20pt normal;
+    color: white;
+    margin: auto;
+    
+
+}
+
+header{
+ margin: auto;
+ text-align: center;
+ font-style: initial;
+
+}
+
+section{
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    color: black;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.61);
+    
+
+
+}
+div {
+    text-align: center;
+}
+
+footer {
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+
+
+}
